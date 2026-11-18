@@ -1,0 +1,38 @@
+{
+  "name": "spectrum-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A reproducible research workspace for the UCI adult autism screening dataset.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "format:check": "prettier --check src \"tests/**/*.ts\" \"*.ts\"",
+    "format": "prettier --write src \"tests/**/*.ts\" \"*.ts\"",
+    "demo": "npm run build && vite preview --port 5173 --strictPort"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.2.5",
+    "@fontsource-variable/manrope": "^5.2.5",
+    "lucide-react": "^0.552.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.1.1",
+    "prettier": "^3.10.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.6",
+    "vitest": "^3.2.6"
+  }
+}
